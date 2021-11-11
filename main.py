@@ -7,11 +7,11 @@ import telebot
 
 
 # API_KEY - Creating Bot
-API_KEY = os.getenv('API_KEY')
-bot = telebot.TeleBot(API_KEY)
+API_KEYs = os.getenv('API_KEY')
+bot = telebot.TeleBot(API_KEYs)
 
 # Bot
-@bot.message_handler(command=['Greet'])
+@bot.message_handler(commands=['Greet'])
 def greet(message):
     bot.reply_to(message, "Hey! How it going")
 
