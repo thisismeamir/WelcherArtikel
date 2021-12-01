@@ -12,7 +12,7 @@ load_dotenv()
 Api_Key = os.getenv('API_KEY')
 
 # API_KEY - Creating Bot
-bot = telebot.TeleBot("2142199446:AAFOkcDk5sTu6-a05nkSYpeC5GmcaHNqklk")
+bot = telebot.TeleBot("")
 
 # Bot basic commands
 @bot.message_handler(commands=['start'])
